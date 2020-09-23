@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailsActivity">
+
+
+    <TextView
+        android:id="@+id/movieTitle2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Movie Title"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:drawableStart="@drawable/ic_baseline_keyboard_backspace_24"/>
+
+        <ImageView
+            android:id="@+id/moviePoster2"
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            app:layout_constraintTop_toBottomOf="@id/movieTitle2"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_launcher_round"
+            android:layout_marginBottom="50dp"
+            />
+
+    <TextView
+        android:id="@+id/releaseDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Movie Release Date:"
+        android:textColor="#000000"
+        app:layout_constraintTop_toBottomOf="@id/moviePoster2"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:textStyle="italic"
+        android:textSize="20sp"
+        android:layout_marginRight="15dp"/>
+
+    <TextView
+        android:id="@+id/releaseDate2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2020-06-29"
+        app:layout_constraintStart_toEndOf="@id/releaseDate"
+        app:layout_constraintTop_toBottomOf="@id/moviePoster2"
+        android:layout_marginTop="15dp"
+        android:textSize="20sp"
+        android:textColor="#b83dba"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/language"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Language:"
+        app:layout_constraintStart_toEndOf="@id/averageVote3"
+        app:layout_constraintTop_toBottomOf="@id/releaseDate"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="15dp"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:textColor="#000000"
+        />
+
+    <TextView
+        android:id="@+id/language2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Eng"
+        app:layout_constraintStart_toEndOf="@id/language"
+        app:layout_constraintTop_toBottomOf="@id/releaseDate2"
+        android:textSize="20sp"
+        android:textColor="#b83dba"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/averageVote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rating:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/releaseDate2"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:textStyle="italic"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        />
+
+    <TextView
+        android:id="@+id/averageVote2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="8.6 "
+        app:layout_constraintStart_toEndOf="@id/averageVote"
+        app:layout_constraintTop_toBottomOf="@id/releaseDate2"
+        android:textSize="20sp"
+        android:textColor="#b83dba"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/averageVote3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" /10.0"
+        app:layout_constraintStart_toEndOf="@id/averageVote2"
+        app:layout_constraintTop_toBottomOf="@id/releaseDate2"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        />
+
+
+    <TextView
+        android:id="@+id/overView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OVER VIEW"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/language"
+        android:layout_marginTop="25dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:textSize="28sp"
+        android:textColor="#6b0217"
+        />
+
+    <TextView
+        android:id="@+id/overView2"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:text="An Over View of the Movie"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/overView"
+        android:textSize="17sp"
+        android:textColor="#080f73"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/overView2"
+        app:layout_constraintEnd_toEndOf="@id/overView2"
+        app:layout_constraintTop_toBottomOf="@id/overView2"
+        app:layout_constraintStart_toEndOf="@id/overView2"
+        android:textColor="#000000"
+        android:text="Read More"
+        android:textSize="17sp"/>
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
